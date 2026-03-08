@@ -30,7 +30,9 @@ def json_update_key(filename: str, key_path: str, value: Any) -> bool:
     keys = key_path.split(".") if key_path else []
     cur = data
     for k in keys[:-1]:
-        if k not in cur or not isinstance(cur[k], dict):
+        if k not in cur and not isinstance(cur[k], dict):
+            return False
+        if k not in cur:
             cur[k] = {}
         cur = cur[k]
     if len(keys) != 0:
