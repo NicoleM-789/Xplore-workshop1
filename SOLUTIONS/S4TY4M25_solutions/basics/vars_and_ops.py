@@ -2,8 +2,8 @@
 
 x = 10
 y = 5
-
-print(x+y) # come on think, this ain't javascript
+sumr=x+y
+print(sumr) # come on think, this ain't javascript
 
 num1 , num2 = 6 , 7
 
