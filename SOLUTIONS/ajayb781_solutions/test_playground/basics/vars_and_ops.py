@@ -15,7 +15,7 @@ for i in range(n):
     a *= 2 # can you replace this loop with a one liner?
 
 #one liner 
-    a = 2**n
+a = 2**n
 
 
 # match the correct statements wrt bitwise operators
